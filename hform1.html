@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta>
+<title>Survey Form</title>
+<link rel="stylesheet" href="hform1.css">
+<script>
+  let x = 10/100;
+  console.log(x);
+</script>
+</head>
+<body>
+    <h1 id="tl">Survey Form</h1>
+    <p id="description">welcome to the Survey on Deforestation</p>
+    <form id="survey-form">
+      <fieldset class="f1">
+       <label id="name-label"> Name: <input placeholder="Enter the name" type="text" id="name" class="inp" required /></label>
+       <label id="email-label">E-mail: <input placeholder="Enter the email" type="email" id="email" class="inp" required /></label>
+       <label id="number-label">Number: <input placeholder="Enter a number" type="number" id="number" min="10" max="100" class="inp"  /></label>
+    </fieldset>
+    <fieldset class="f2">
+      <label for="Forests">Does Deforestation occur in your area?
+      <select name="Forests" id="dropdown">
+        <option>happens</option>
+        <option>doesn't happen</option>
+        <option>unsure</option>
+      </select>
+      </label>
+      <label>Do you want excessive Deforestaiton to stop?<br>
+         <input type="radio" value="sel" name="selc">Yes
+         <input type="radio" value="sel" name="selc">No
+      </label>
+      Do you work towards stopping Deforestation?<br>
+        <label><input type="checkbox" value="chbox" >Yes</label>
+        <label><input type="checkbox" value="chbox" >No</label>
+        <label><input type="checkbox" value="chbox">Sometimes</label>
+        <label><input type="checkbox" value="chbox">Would like to join Us!!</label>
+    </fieldset>
+    <fieldset class="f3">
+      <textarea name="Comments" placeholder="Please leave any comments for Us!!">
+      </textarea><br>
+      <button id="submit" value="submit">Submit</button>
+    </fieldset>
+    </form>
+</body>
+</html>

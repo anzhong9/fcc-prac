@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Examples</title>
+    <style>
+        /* Common styles for examples */
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid black;
+            display: inline-block;
+            font-size: 12px;
+        }
+
+        /* Static Position */
+        .static-box {
+            position: static;
+        }
+
+        /* Relative Position */
+        .relative-box {
+            position: relative;
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        /* Absolute Position */
+        .absolute-container {
+            position: relative;
+        }
+        .absolute-box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #3498db;
+            color: white;
+        }
+
+        /* Fixed Position */
+        .fixed-box {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        /* Sticky Position */
+        .sticky-box-container {
+            height: 300vh; /* To create scrollable content */
+            position: relative;
+        }
+        .sticky-box {
+            position: sticky;
+            top: 20px;
+            background-color: #f39c12;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box static-box">Static</div>
+    <div class="box relative-box">Relative</div>
+
+    <div class="absolute-container">
+        <div class="box absolute-box">Absolute</div>
+    </div>
+
+    <div class="box fixed-box">Fixed</div>
+
+    <div class="sticky-box-container">
+        <div class="box sticky-box">Sticky</div>
+    </div>
+</body>
+</html>
